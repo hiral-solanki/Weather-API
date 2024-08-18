@@ -1,7 +1,7 @@
 <?php
 class weather{
     function getWeather($city='pune'){
-        $api = '894e12e9340d14b25339a5afdb4aa7df';
+        $api = ''; //Add your API Key here
         $curl = curl_init();
 
         curl_setopt_array($curl, [
@@ -29,7 +29,7 @@ class weather{
         }
    }
    function getWeatherTomorrowIO($city='pune'){
-        $apik = 'WHzTsu5RACPWVO38fsGquSYl20jbNNJg';
+        $apik = ''; //Add your API key here
 	   $curl = curl_init();
 		curl_setopt_array($curl, [
 			CURLOPT_URL => "https://api.tomorrow.io/v4/weather/realtime?location=".$city."&apikey=".$apik,
